@@ -1,0 +1,12 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+body {
+    background-image: url('https://accgroup.vn/wp-content/uploads/2023/02/Background-la-gi.jpg.webp');
+    resize: horizontal;
+    border-image-width: auto;
+}
+border-header {
+    background-color: #7d7c7c
+}
+

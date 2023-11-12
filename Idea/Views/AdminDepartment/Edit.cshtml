@@ -1,0 +1,32 @@
+@model Idea.Models.Department
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div style="width: 150px; margin-left: auto; margin-right: auto;">
+<h4>DEPARMENT</h4></div>
+<hr />
+<div class="d-flex justify-content-center align-items-center min-vh-10">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-info"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-info"></span>
+            </div></br>
+            <div class="form-group">
+                <input type="submit" value="SAVE" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div></br>
+
+<div>
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
